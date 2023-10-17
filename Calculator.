@@ -4,7 +4,7 @@
 int main() {
     // Declare variables
     int choice;
-    float num1, num2;
+    float num1, num2;  // Can only take two inputs.
 
     // Loop to display menu
     do {
