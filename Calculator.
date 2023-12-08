@@ -1,8 +1,9 @@
 #include <stdio.h>
+
 // Author: Nikhil
 // Program : Simple Calculator.
+
 int main() {
-    // Declare variables
     int choice;
     float num1, num2;  // Can only take two inputs.
 
@@ -16,34 +17,32 @@ int main() {
         printf("5. Exit\n");
         //printf("\033[0;31m [TEXT] \033[0m\n"); // Reference for colouring sentences
         
-        // Get user input
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
-        // Checking user choice
         switch(choice) {
-            // Addition
+            // Adding
             case 1:
                 printf("Enter two numbers: ");
                 scanf("%f %f", &num1, &num2);
                 printf("%.2f + %.2f = %.2f", num1, num2, num1 + num2);
                 break;
 
-            // Subtraction
+            // Subtracting
             case 2:
                 printf("Enter two numbers: ");
                 scanf("%f %f", &num1, &num2);
                 printf("%.2f - %.2f = %.2f", num1, num2, num1 - num2);
                 break;
 
-            // Multiplication
+            // Multiplicating
             case 3:
                 printf("Enter two numbers: ");
                 scanf("%f %f", &num1, &num2);
                 printf("%.2f x %.2f = %.2f", num1, num2, num1 * num2);
                 break;
 
-            // Division
+            // Dividing
             case 4:
                 printf("Enter two numbers: ");
                 scanf("%f %f", &num1, &num2);
@@ -55,12 +54,12 @@ int main() {
                 }
                 break;
 
-            // Exit
+            // Exit Sequence
             case 5:
                 printf("Goodbye!");
                 break;
 
-            // Invalid input
+            // Error msg
             default:
                 printf("Invalid choice. Try again.");
         }
